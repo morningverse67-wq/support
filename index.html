@@ -96,8 +96,9 @@
     <div lang="en">
       <p><strong>Ledger A has no accounts, and we cannot read your book.</strong></p>
       <p>Everything you write is kept in the app's own storage on your device. No analytics, no advertising, no third-party software development kits are included.</p>
-      <p><strong>Cloud backup</strong> is on from the start. The app locks your book file on your device (AES-GCM) and sends it to our server on Cloudflare. The key stays in your iCloud Keychain and never reaches us. The server keeps only the locked file, a version number and the time it was last saved, filed under a random ID made from that key. No name, no email, no account. So we cannot read what you wrote, or tell whose file is whose.</p>
+      <p><strong>Cloud backup</strong> is part of a monthly subscription and is off until you turn it on. The app locks your book file on your device (AES-GCM) and sends it to our server on Cloudflare. The key stays in your iCloud Keychain and never reaches us. The server keeps only the locked file, a version number and the time it was last saved, filed under a random ID made from that key. No name, no email, no account. So we cannot read what you wrote, or tell whose file is whose.</p>
       <p>To pass requests on and to limit abuse, Cloudflare handles the IP address each request comes from. We do not store it.</p>
+      <p>To check the subscription, the app sends the App Store's signed purchase record (transaction IDs, product, purchase and expiry dates, storefront country and price, and similar purchase details) with each upload and when it fetches Reading. The server checks Apple's signature and does not store it. Reading articles come from the same server; it does not record who read what. Payment is handled by Apple; we never see card details.</p>
       <p>You can turn cloud backup off under Book › Advanced. Turning it off deletes the copy on the server the next time the app is open and online. Turn it off on every device that uses the same iCloud Keychain; a device that still has it on uploads the copy again. Deleting the app does not delete the copy: it stays, and comes back if you install the app again with the same iCloud Keychain. To remove it, turn cloud backup off before deleting the app. If you no longer have the phone, install the app on another device with the same iCloud Keychain and turn it off there. A deleted copy can remain in the server's recovery records for up to 30 days.</p>
       <p>Reminders are scheduled by iOS on your device and their text never leaves it. Exporting produces a file that you choose where to send; the app has no part in what happens to it afterwards. With cloud backup off, deleting the app deletes your book along with it, so export first if you want to keep it.</p>
       <p>We cannot tell which copy is yours, so we cannot find it for you by email. Turning cloud backup off is how you delete it. We do not hand the copies to anyone.</p>
@@ -107,8 +108,9 @@
     <div lang="ko">
       <p><strong>Ledger A에는 계정이 없고, 저희는 장부 내용을 읽을 수 없습니다.</strong></p>
       <p>적으신 내용은 기기 안 앱 저장소에 있습니다. 분석 도구도 광고도 외부 개발 도구도 들어 있지 않습니다.</p>
-      <p><strong>클라우드 백업</strong>은 처음부터 켜져 있습니다. 앱이 장부 파일을 기기에서 잠근 뒤(AES-GCM) Cloudflare 위에 있는 저희 서버로 올립니다. 잠그는 열쇠는 사용자의 iCloud 키체인에만 있고 저희에게 오지 않습니다. 서버에는 잠긴 파일, 판 번호, 마지막 저장 시각만 남고, 그 열쇠에서 나온 무작위 id로만 구분합니다. 이름도 이메일도 계정도 없습니다. 그래서 저희는 내용을 읽을 수 없고, 어느 파일이 누구 것인지도 모릅니다.</p>
+      <p><strong>클라우드 백업</strong>은 월 구독에 들어 있고, 직접 켜기 전까지는 꺼져 있습니다. 앱이 장부 파일을 기기에서 잠근 뒤(AES-GCM) Cloudflare 위에 있는 저희 서버로 올립니다. 잠그는 열쇠는 사용자의 iCloud 키체인에만 있고 저희에게 오지 않습니다. 서버에는 잠긴 파일, 판 번호, 마지막 저장 시각만 남고, 그 열쇠에서 나온 무작위 id로만 구분합니다. 이름도 이메일도 계정도 없습니다. 그래서 저희는 내용을 읽을 수 없고, 어느 파일이 누구 것인지도 모릅니다.</p>
       <p>요청을 전달하고 남용을 막기 위해 Cloudflare가 접속한 IP 주소를 처리합니다. 저희는 IP 주소를 저장하지 않습니다.</p>
+      <p>구독을 확인하기 위해, 올릴 때와 읽을거리를 받을 때 App Store가 서명한 구매 기록(거래 번호, 상품, 구매·만료 날짜, 구매한 나라와 값 같은 구매 정보)을 함께 보냅니다. 서버는 Apple의 서명만 확인하고 저장하지 않습니다. 읽을거리 글도 같은 서버에서 받으며, 누가 무엇을 읽었는지는 기록하지 않습니다. 결제는 Apple이 처리하며 저희는 카드 정보를 보지 않습니다.</p>
       <p>클라우드 백업은 책 화면의 「고급」에서 끌 수 있습니다. 끄면, 인터넷이 연결된 상태에서 다음에 앱을 열 때 서버 사본이 지워집니다. 같은 iCloud 키체인을 쓰는 모든 기기에서 꺼야 합니다. 켜져 있는 기기가 있으면 그 기기가 사본을 다시 올립니다. 앱을 지우는 것만으로는 지워지지 않습니다. 사본이 남아 있다가, 같은 iCloud 키체인으로 앱을 다시 설치하면 돌아옵니다. 지우려면 앱을 지우기 전에 먼저 끄세요. 폰이 없으면 같은 iCloud 키체인을 쓰는 다른 기기에 앱을 설치해 거기서 끄면 됩니다. 지운 사본은 서버의 복구용 기록에 최대 30일 남을 수 있습니다.</p>
       <p>알림은 기기 안에서 iOS가 예약하며 그 문구도 기기를 떠나지 않습니다. 내보내기는 파일을 하나 만들 뿐이고 그 파일을 어디로 보낼지는 사용자가 정합니다. 그 이후에 앱이 관여하는 일은 없습니다. 클라우드 백업을 끈 채 앱을 지우면 책도 함께 지워지니, 남기고 싶으시면 먼저 내보내 두세요.</p>
       <p>어느 사본이 누구 것인지 저희가 알 수 없어서, 메일로 요청하셔도 찾아 지워 드릴 수 없습니다. 지우는 길은 클라우드 백업을 끄는 것입니다. 사본을 누구에게 넘기는 일은 없습니다.</p>
@@ -118,8 +120,9 @@
     <div lang="ja">
       <p><strong>Ledger A にはアカウントがなく、当方は帳簿の中身を読めません。</strong></p>
       <p>書いた内容は端末内のアプリ領域に保存されます。解析ツールも広告も第三者の開発キットも含まれていません。</p>
-      <p><strong>クラウドバックアップ</strong>は最初からオンです。アプリが帳簿ファイルを端末上で鍵をかけ（AES-GCM）、Cloudflare 上にある当方のサーバーへ送ります。鍵は利用者の iCloud キーチェーンにだけあり、当方には届きません。サーバーに残るのは、鍵のかかったファイル、版番号、最後に保存した時刻だけで、その鍵から作った無作為な ID でのみ区別します。名前もメールアドレスもアカウントもありません。そのため当方は内容を読めず、どのファイルが誰のものかもわかりません。</p>
+      <p><strong>クラウドバックアップ</strong>は月額の購読に含まれ、自分でオンにするまではオフです。アプリが帳簿ファイルを端末上で鍵をかけ（AES-GCM）、Cloudflare 上にある当方のサーバーへ送ります。鍵は利用者の iCloud キーチェーンにだけあり、当方には届きません。サーバーに残るのは、鍵のかかったファイル、版番号、最後に保存した時刻だけで、その鍵から作った無作為な ID でのみ区別します。名前もメールアドレスもアカウントもありません。そのため当方は内容を読めず、どのファイルが誰のものかもわかりません。</p>
       <p>リクエストを届け、濫用を防ぐために、Cloudflare が接続元の IP アドレスを扱います。当方は IP アドレスを保存しません。</p>
+      <p>購読を確認するため、送信時と読みものを受け取るときに、App Store が署名した購入記録（取引番号、商品、購入日・有効期限、購入した国と価格などの購入情報）をあわせて送ります。サーバーは Apple の署名を確認するだけで保存しません。読みものも同じサーバーから受け取り、誰が何を読んだかは記録しません。支払いは Apple が処理し、当方がカード情報を見ることはありません。</p>
       <p>クラウドバックアップは「帳簿」画面の「詳細」でオフにできます。オフにすると、インターネットにつながった状態で次にアプリを開いたときにサーバーのコピーが削除されます。同じ iCloud キーチェーンを使うすべての端末でオフにしてください。オンのままの端末があると、その端末がコピーをまた送ります。アプリを削除するだけでは消えません。コピーは残り、同じ iCloud キーチェーンでアプリを再インストールすると戻ります。消したい場合は、アプリを削除する前にオフにしてください。端末が手元にない場合は、同じ iCloud キーチェーンの別の端末にアプリを入れてオフにしてください。削除したコピーは、サーバーの復旧用記録に最大30日残ることがあります。</p>
       <p>リマインダーは端末内で iOS が予約し、その文面も端末の外へ出ません。書き出しはファイルを一つ作るだけで、その送り先は利用者が決めます。その後にアプリが関わることはありません。クラウドバックアップがオフのままアプリを削除すると帳簿も一緒に消えますので、残したい場合は先に書き出してください。</p>
       <p>どのコピーが誰のものか当方にはわからないため、メールでご依頼いただいても探して削除することはできません。削除する方法はクラウドバックアップをオフにすることです。コピーを誰かに渡すことはありません。</p>
