@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>시술노트 — 지원 · 개인정보 처리방침</title>
+<style>
+  :root { color-scheme: light dark; --fg: #17171c; --muted: #66645c; --bg: #f5f4f0; --line: #e4e1d8; --link: #3a2c9c; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg: #ecebe6; --muted: #a8a69e; --bg: #141418; --line: #34333a; --link: #b8adf7; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 48px 20px 80px; background: var(--bg); color: var(--fg); overflow-wrap: anywhere;
+         font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Hiragino Sans", "PingFang TC", "PingFang SC", sans-serif; }
+  :lang(ko) { word-break: keep-all; }
+  :lang(en), :lang(ja), :lang(zh) { word-break: normal; }
+  main { max-width: 640px; margin: 0 auto; }
+  .mark { width: 76px; height: 76px; border-radius: 17px; background: #17171c; border: 1px solid var(--line); position: relative; }
+  .mark::after { content: "시"; position: absolute; inset: 0; display: grid; place-items: center; color: #fff;
+                 font: 800 36px/1 -apple-system, "Apple SD Gothic Neo", sans-serif; }
+  h1 { font-size: 30px; margin: 20px 0 4px; letter-spacing: -0.01em; }
+  .sub { color: var(--muted); margin: 0 0 40px; }
+  .langs { color: var(--muted); font-size: 15px; margin: 0 0 8px; }
+  section { border-top: 1px solid var(--line); padding-top: 28px; margin-top: 28px; }
+  h2 { font-size: 20px; margin: 0 0 12px; }
+  h3 { font-size: 17px; margin: 22px 0 6px; }
+  p, li { margin: 0 0 10px; }
+  ul { padding-left: 20px; margin: 0 0 10px; }
+  dt { font-weight: 600; margin-top: 18px; }
+  dd { margin: 4px 0 0; color: var(--muted); }
+  #privacy .sub { margin-bottom: 20px; font-size: 15px; }
+  #privacy > div + div { border-top: 1px dashed var(--line); margin-top: 28px; padding-top: 20px; }
+  a { color: var(--link); }
+  footer { margin-top: 48px; color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="mark" aria-hidden="true"></div>
+  <h1>시술노트</h1>
+  <p class="sub"><span lang="en">Sisul Note</span> · <span lang="ja">施術ノート</span> · <span lang="zh-Hant">療程筆記</span> · <span lang="zh-Hans">疗程笔记</span><br>받은 시술과 다음 방문일, 쓴 돈을 이 폰에만 적어 두는 앱.</p>
+  <p class="langs">
+    <a href="#ko">한국어</a> · <a href="#en" lang="en">English</a> · <a href="#ja" lang="ja">日本語</a> · <a href="#zh-Hant" lang="zh-Hant">繁體中文</a> · <a href="#zh-Hans" lang="zh-Hans">简体中文</a>
+    · <a href="#privacy">개인정보 처리방침 · Privacy Policy</a>
+  </p>
+
+  <section id="ko">
+    <h2>지원</h2>
+    <dl>
+      <dt>결제 문자로 기록하려면 어떻게 하나요?</dt>
+      <dd>병원에서 카드로 결제한 뒤 받은 결제 문자를 길게 눌러 복사하고, 시술노트 아래의 「붙여넣기」를 누르세요. 금액·병원·날짜·카드를 읽어 보여 드려요. 틀린 줄은 눌러서 고치고, 받은 시술을 고른 뒤 저장하면 돼요.</dd>
+      <dt>어떤 문자를 읽나요?</dt>
+      <dd>한국 카드사가 보내는 한국어 결제 승인 문자만 읽어요. 금액이 「원」으로 적혀 있어야 하고, 병원 이름은 「피부과·의원·클리닉·더마·스킨·성형외과」가 들어간 낱말에서 찾아요. 카드는 카드사 이름과 끝 네 자리만 읽어요. 읽지 못한 문자는 「손으로 적기」로 남겨 주세요. 문자는 이 폰 안에서만 읽고, 문자 원문은 저장하지 않아요.</dd>
+      <dt>기록은 어디에 있나요?</dt>
+      <dd>이 아이폰의 앱 폴더에만 있어요. 계정도 서버도 없어서 저희에게 오지 않아요. 앱을 지우면 기록도 함께 지워지니 백업을 해 두세요.</dd>
+      <dt>백업하고 새 폰에서 이어 쓰려면?</dt>
+      <dd>메뉴 › 백업·복원에서 「백업 저장하기」를 누르면 기록이 담긴 .json 파일을 원하는 곳에 저장해요. 새 폰에서는 「복원하기」로 그 파일을 고르세요(기록이 아직 없으면 첫 화면의 「백업 파일 가져오기」). 지금 있는 기록은 지우지 않고, 없는 기록만 더해요.<br>
+      「자동 백업 폴더 고르기」로 iCloud Drive에 만든 폴더를 고르면, 기록이 바뀔 때마다 그 폴더의 「시술노트-자동백업.json」을 덮어써요. 새 폰에서 같은 폴더를 고르면 그 기록을 이어 받아요.<br>
+      백업 파일은 암호화되지 않아요. 보관할 곳과 보낼 사람을 조심해서 정해 주세요.</dd>
+      <dt>플러스를 샀는데 새 폰에서는 잠겨 있어요.</dt>
+      <dd>「지출」 탭의 「플러스 보기」에서 「이미 샀어요 (구매 복원)」를 누르세요. 같은 Apple 계정으로 산 플러스를 불러와요. 플러스는 한 번만 결제하고 매달 나가지 않아요. 결제와 환불은 Apple이 처리해요.</dd>
+      <dt>플러스에는 무엇이 있나요?</dt>
+      <dd>지출을 병원·시술·카드별로 나눠 보기와, 다음 관리를 내 캘린더에 넣기예요. 기록·다음 관리·알림·잠금·백업은 무료예요.</dd>
+      <dt>다음 방문일은 어떻게 정해지나요?</dt>
+      <dd>받은 날에 그 시술의 주기를 더한 날이에요. 처음에는 앱에 넣어 둔 기본값이고, 「다음 방문」 옆 「바꾸기」로 고친 주기는 다음 기록에도 이어져요. 이 주기는 참고용이며 진단이나 치료 권유가 아니에요. 다음 시술 시기는 진료받는 병원과 상담해 정하고, 병원 안내가 앱과 다르면 병원 안내를 따라 주세요.</dd>
+      <dt>알림이 오지 않아요.</dt>
+      <dd>설정 › 알림 › 시술노트에서 알림을 허용해 주세요. 메뉴 › 알림 시각에서 3일 전·하루 전·당일과 시각을 고를 수 있어요. 알림 날이 이미 지났거나 「쉬기」로 둔 시술에는 알림을 걸지 않아요.</dd>
+      <dt>캘린더에 넣으려면?</dt>
+      <dd>메뉴의 「캘린더에 넣기」를 누르고 캘린더 접근을 ‘전체 접근’으로 허락해 주세요(플러스). 시술노트는 자기가 넣은 일정만 찾아 고치고 지우며, 다른 일정은 읽지 않아요. 일정 추가만 허락하는 권한으로는 앱이 넣은 일정도 다시 찾을 수 없어서 전체 접근이 필요해요. 빼려면 메뉴의 「캘린더에서 빼기」를 누르세요.</dd>
+      <dt>옆 사람이 시술 이름을 못 보게 하려면?</dt>
+      <dd>화면 위의 「가리기」를 켜면 화면과 알림에 시술 이름 대신 「관리 예약」이 보이고, 화면의 금액과 병원은 점으로 가려져요(알림에는 병원 이름이 빠져요). 캘린더 제목은 메뉴의 「캘린더 제목도 가리기」로 따로 정해요. 메뉴의 「앱 잠금」을 켜면 앱을 열 때 Face ID나 기기 암호로 확인해요.</dd>
+    </dl>
+    <p>그 밖의 문의: <a href="mailto:morningverse67@gmail.com">morningverse67@gmail.com</a></p>
+  </section>
+
+  <section id="en" lang="en">
+    <h2>Support</h2>
+    <dl>
+      <dt>How do I add a record from a payment text?</dt>
+      <dd>After paying by card at the clinic, long-press the payment text you received, copy it, and tap Paste at the bottom of Sisul Note. The app reads the amount, clinic, date and card and shows them to you. Tap any line that is wrong to fix it, choose the treatment, and save.</dd>
+      <dt>Which texts can it read?</dt>
+      <dd>Only card payment approval texts sent in Korean by Korean card companies. The amount must be in won (원), and the clinic name is taken from a word containing 피부과, 의원, 클리닉, 더마, 스킨 or 성형외과. From the card, only the card company and the last four digits are read. If a text can't be read, use Enter manually. Texts are read only on this phone, and the original text is not saved.</dd>
+      <dt>Where are my records?</dt>
+      <dd>Only in the app's folder on this iPhone. There is no account and no server, so nothing comes to us. Deleting the app deletes your records too, so keep a backup.</dd>
+      <dt>How do I back up or move to a new phone?</dt>
+      <dd>In Menu › Backup &amp; restore, Save backup saves a .json file with your records wherever you choose. On the new phone, tap Restore and pick that file (with no records yet, use Import backup file on the first screen). Records already there are kept; only missing ones are added.<br>
+      With Choose auto backup folder, pick a folder you made in iCloud Drive, and the app overwrites 시술노트-자동백업.json in it whenever your records change. Choose the same folder on a new phone to pick those records up.<br>
+      Backup files are not encrypted, so be careful where you keep them and whom you send them to.</dd>
+      <dt>I bought Plus, but it's locked on my new phone.</dt>
+      <dd>On the Spending tab, tap See Plus, then Already bought (Restore purchase). Plus bought with the same Apple Account is restored. Plus is a one-time purchase, not a monthly charge. Payment and refunds are handled by Apple.</dd>
+      <dt>What does Plus include?</dt>
+      <dd>Spending breakdown by clinic, treatment and card, and adding your next visits to your calendar. Records, next visits, reminders, lock and backup stay free.</dd>
+      <dt>How is the next visit date set?</dt>
+      <dd>It is the date of the treatment plus that treatment's interval. At first the interval is a default value built into the app; an interval you change with Change next to Next visit carries over to later records. Intervals are for reference only and are not a diagnosis or a treatment recommendation. Decide when to go back with your clinic, and if the clinic's advice differs from the app, follow the clinic.</dd>
+      <dt>Reminders don't arrive.</dt>
+      <dd>Open Settings › Notifications › Sisul Note and allow notifications. In Menu › Reminder time you can choose 3 days before, 1 day before or Same day, and the hour. No reminder is set when its day has already passed or the treatment is paused.</dd>
+      <dt>How do I add visits to my calendar?</dt>
+      <dd>Tap Add to calendar in Menu and allow “Full Access” to your calendars (Plus). Sisul Note finds, changes and deletes only the events it added, and does not read your other events. Full Access is needed because with add-only access the app cannot find even its own events again to update or remove them. To take them out, tap Remove from calendar in Menu.</dd>
+      <dt>How do I keep treatment names private?</dt>
+      <dd>Turn on Hide at the top of the screen: screens and reminders show “Appointment” instead of treatment names, amounts and clinics on screen are replaced with dots, and reminders leave out the clinic. Calendar titles are set separately with Hide calendar titles too in Menu. Turn on App lock in Menu to require Face ID or your passcode when the app opens.</dd>
+    </dl>
+    <p>Anything else: <a href="mailto:morningverse67@gmail.com">morningverse67@gmail.com</a></p>
+  </section>
+
+  <section id="ja" lang="ja">
+    <h2>サポート</h2>
+    <dl>
+      <dt>決済SMSから記録するには？</dt>
+      <dd>クリニックでカード決済したあとに届いた決済SMSを長押ししてコピーし、施術ノートの下にある「ペースト」をタップします。金額・クリニック・日付・カードを読み取って表示します。違っている行はタップして直し、受けた施術を選んで保存してください。</dd>
+      <dt>どんなSMSを読み取れますか？</dt>
+      <dd>韓国のカード会社が韓国語で送る決済承認SMSだけです。金額が「원」（ウォン）で書かれている必要があり、クリニック名は「피부과・의원・클리닉・더마・스킨・성형외과」を含む語から探します。カードはカード会社名と下4桁だけを読み取ります。読み取れないSMSは「手で入力」で記録してください。SMSはこのスマホの中だけで読み取り、原文は保存しません。</dd>
+      <dt>記録はどこに保存されますか？</dt>
+      <dd>このiPhoneのアプリ内フォルダだけです。アカウントもサーバーもないため、当方には届きません。アプリを削除すると記録も消えるので、バックアップを取っておいてください。</dd>
+      <dt>バックアップと機種変更は？</dt>
+      <dd>メニュー › バックアップ・復元の「バックアップを保存」で、記録を入れた .json ファイルを好きな場所に保存します。新しいスマホでは「復元」でそのファイルを選びます（記録がまだないときは最初の画面の「バックアップを取り込む」）。今ある記録は消さず、ない記録だけを足します。<br>
+      「自動バックアップのフォルダを選ぶ」で iCloud Drive に作ったフォルダを選ぶと、記録が変わるたびにそのフォルダの「시술노트-자동백업.json」を上書きします。新しいスマホで同じフォルダを選ぶと、その記録を引き継ぎます。<br>
+      バックアップファイルは暗号化されません。保管場所と送り先にご注意ください。</dd>
+      <dt>Plus を買ったのに、新しいスマホではロックされています。</dt>
+      <dd>「支出」タブの「Plus を見る」から「購入済み(購入を復元)」をタップしてください。同じ Apple アカウントで買った Plus を読み込みます。Plus は一度だけの支払いで、毎月の請求はありません。支払いと返金は Apple が扱います。</dd>
+      <dt>Plus でできることは？</dt>
+      <dd>支出をクリニック・施術・カード別に見ること（支出の内訳）と、次の来院をカレンダーに追加することです。記録・次の来院・通知・ロック・バックアップは無料です。</dd>
+      <dt>次の来院日はどう決まりますか？</dt>
+      <dd>受けた日に、その施術の間隔を足した日です。最初はアプリに入っている初期値で、「次の来院」の「変更」で変えた間隔は次の記録にも引き継がれます。この間隔は参考値で、診断や治療の勧めではありません。次の施術の時期は通っているクリニックと相談して決め、クリニックの案内とアプリが違う場合はクリニックの案内に従ってください。</dd>
+      <dt>通知が届きません。</dt>
+      <dd>設定 › 通知 › 施術ノートで通知を許可してください。メニュー › 通知のタイミングで、3日前・前日・当日と時刻を選べます。通知日がすでに過ぎた施術や「休止」にした施術には通知を設定しません。</dd>
+      <dt>カレンダーに追加するには？</dt>
+      <dd>メニューの「カレンダーに追加」をタップし、カレンダーへのアクセスを「フルアクセス」で許可してください（Plus）。施術ノートは自分が追加した予定だけを探して変更・削除し、ほかの予定は読み取りません。追加だけの権限では、アプリが追加した予定もあとから探せないため、フルアクセスが必要です。外すときはメニューの「カレンダーから外す」をタップします。</dd>
+      <dt>施術名を人に見られたくありません。</dt>
+      <dd>画面上の「隠す」をオンにすると、画面と通知では施術名の代わりに「予約」と表示され、画面の金額とクリニックは点で隠れます（通知ではクリニック名を省きます）。カレンダーのタイトルはメニューの「カレンダーのタイトルも隠す」で別に設定します。メニューの「アプリのロック」をオンにすると、開くときに Face ID かパスコードで確認します。</dd>
+    </dl>
+    <p>その他のお問い合わせ: <a href="mailto:morningverse67@gmail.com">morningverse67@gmail.com</a></p>
+  </section>
+
+  <section id="zh-Hant" lang="zh-Hant">
+    <h2>支援</h2>
+    <dl>
+      <dt>怎麼用付款簡訊記錄？</dt>
+      <dd>在診所刷卡後，長按收到的付款簡訊並複製，再點療程筆記下方的「貼上」。App 會讀出金額、診所、日期和卡片並顯示出來。點一下有誤的那一行即可修改，選好做過的療程後儲存。</dd>
+      <dt>能讀哪些簡訊？</dt>
+      <dd>只能讀韓國發卡機構以韓文發送的刷卡核准簡訊。金額必須以「원」（韓元）標示，診所名稱會從含有「피부과、의원、클리닉、더마、스킨、성형외과」的詞中找出。卡片只讀發卡機構名稱和末四碼。讀不出來的簡訊請用「手動輸入」記錄。簡訊只在這支手機上讀取，原文不會儲存。</dd>
+      <dt>紀錄存在哪裡？</dt>
+      <dd>只存在這支 iPhone 的 App 資料夾裡。沒有帳號也沒有伺服器，所以不會傳給我們。刪除 App 時紀錄也會一起刪除，請先備份。</dd>
+      <dt>怎麼備份、換手機後接著用？</dt>
+      <dd>在選單 › 備份與還原點「儲存備份」，就能把含有紀錄的 .json 檔存到你選的位置。在新手機上點「還原」並選擇該檔案（還沒有紀錄時，可用第一個畫面的「匯入備份檔」）。現有紀錄不會刪除，只會加入沒有的紀錄。<br>
+      用「選擇自動備份資料夾」選取你在 iCloud 雲碟建立的資料夾後，紀錄一有變動就會覆寫其中的「시술노트-자동백업.json」。在新手機上選同一個資料夾，就能接續那些紀錄。<br>
+      備份檔沒有加密，請小心決定存放位置與傳送對象。</dd>
+      <dt>買了 Plus，新手機上卻是鎖住的。</dt>
+      <dd>在「支出」分頁點「查看 Plus」，再點「已購買（恢復購買）」。會載入用同一個 Apple 帳號購買的 Plus。Plus 只需付款一次，不會每月扣款。付款與退款由 Apple 處理。</dd>
+      <dt>Plus 包含什麼？</dt>
+      <dd>依診所、療程、卡片查看支出明細，以及把下次回診加入行事曆。紀錄、下次回診、通知、鎖定和備份都免費。</dd>
+      <dt>下次回診日怎麼決定？</dt>
+      <dd>是做療程那天加上該療程的週期。一開始是 App 內建的預設值，在「下次回診」旁點「更改」改過的週期會沿用到之後的紀錄。這個週期僅供參考，不是診斷，也不是治療建議。下次療程的時間請與就診的診所討論決定；若診所的說明與 App 不同，請以診所為準。</dd>
+      <dt>收不到通知。</dt>
+      <dd>請到「設定」›「通知」›「療程筆記」允許通知。在選單 ›「通知時間」可選擇提前3天、提前1天或當天，以及時間。通知日已過或已「暫停」的療程不會設定通知。</dd>
+      <dt>怎麼加入行事曆？</dt>
+      <dd>點選單中的「加入行事曆」，並將行事曆設為「完整取用權」（Plus）。療程筆記只會找出、修改和刪除它自己加入的行程，不會讀取你的其他行程。之所以需要完整取用權，是因為在只允許加入行程的權限下，App 也無法再找到自己加入的行程來更新或刪除。要移除時，點選單中的「從行事曆移除」。</dd>
+      <dt>不想讓別人看到療程名稱。</dt>
+      <dd>開啟畫面上方的「隱藏」後，畫面和通知會以「預約」代替療程名稱，畫面上的金額和診所會以圓點遮住（通知中不顯示診所名稱）。行事曆標題要在選單的「行事曆標題也隱藏」另外設定。開啟選單中的「App 鎖定」後，打開 App 時會以 Face ID 或密碼確認。</dd>
+    </dl>
+    <p>其他問題：<a href="mailto:morningverse67@gmail.com">morningverse67@gmail.com</a></p>
+  </section>
+
+  <section id="zh-Hans" lang="zh-Hans">
+    <h2>支持</h2>
+    <dl>
+      <dt>怎样用付款短信记录？</dt>
+      <dd>在诊所刷卡后，长按收到的付款短信并复制，再点疗程笔记下方的“粘贴”。App 会读出金额、诊所、日期和卡片并显示出来。点一下有误的那一行即可修改，选好做过的项目后保存。</dd>
+      <dt>能读哪些短信？</dt>
+      <dd>只能读韩国发卡机构用韩文发送的刷卡授权短信。金额必须以“원”（韩元）标示，诊所名称会从含有“피부과、의원、클리닉、더마、스킨、성형외과”的词中找出。卡片只读发卡机构名称和后四位。读不出来的短信请用“手动输入”记录。短信只在这台手机上读取，原文不会保存。</dd>
+      <dt>记录存在哪里？</dt>
+      <dd>只存在这台 iPhone 的 App 文件夹里。没有账号也没有服务器，所以不会传给我们。删除 App 时记录也会一起删除，请先备份。</dd>
+      <dt>怎样备份、换手机后接着用？</dt>
+      <dd>在菜单 › 备份与恢复点“保存备份”，就能把含有记录的 .json 文件存到你选的位置。在新手机上点“恢复”并选择该文件（还没有记录时，可用第一个画面的“导入备份文件”）。现有记录不会删除，只会添加没有的记录。<br>
+      用“选择自动备份文件夹”选中你在 iCloud 云盘新建的文件夹后，记录一有变化就会覆盖其中的“시술노트-자동백업.json”。在新手机上选同一个文件夹，就能接续那些记录。<br>
+      备份文件没有加密，请小心决定存放位置和发送对象。</dd>
+      <dt>买了 Plus，新手机上却是锁住的。</dt>
+      <dd>在“支出”标签页点“查看 Plus”，再点“已购买（恢复购买）”。会载入用同一个 Apple 账户购买的 Plus。Plus 只需付款一次，不会每月扣款。付款和退款由 Apple 处理。</dd>
+      <dt>Plus 包含什么？</dt>
+      <dd>按诊所、项目、卡片查看支出明细，以及把下次就诊添加到日历。记录、下次就诊、通知、锁定和备份都免费。</dd>
+      <dt>下次就诊日怎样确定？</dt>
+      <dd>是做项目那天加上该项目的周期。一开始是 App 内置的默认值，在“下次就诊”旁点“更改”改过的周期会沿用到之后的记录。这个周期仅供参考，不是诊断，也不是治疗建议。下次项目的时间请与就诊的诊所商量决定；如果诊所的说明与 App 不同，请以诊所为准。</dd>
+      <dt>收不到通知。</dt>
+      <dd>请到“设置”›“通知”›“疗程笔记”允许通知。在菜单 ›“通知时间”可选择提前3天、提前1天或当天，以及时间。通知日已过或已“暂停”的项目不会设置通知。</dd>
+      <dt>怎样添加到日历？</dt>
+      <dd>点菜单中的“添加到日历”，并将日历权限设为“完全访问”（Plus）。疗程笔记只会找出、修改和删除它自己添加的日程，不会读取你的其他日程。之所以需要完全访问，是因为在只允许添加日程的权限下，App 也无法再找到自己添加的日程来更新或删除。要移除时，点菜单中的“从日历移除”。</dd>
+      <dt>不想让别人看到项目名称。</dt>
+      <dd>打开画面上方的“隐藏”后，画面和通知会用“预约”代替项目名称，画面上的金额和诊所会用圆点遮住（通知中不显示诊所名称）。日历标题要在菜单的“日历标题也隐藏”另外设置。打开菜单中的“应用锁”后，打开 App 时会用面容 ID 或密码确认。</dd>
+    </dl>
+    <p>其他问题：<a href="mailto:morningverse67@gmail.com">morningverse67@gmail.com</a></p>
+  </section>
+
+  <section id="privacy">
+    <h2>개인정보 처리방침 · Privacy Policy · プライバシーポリシー · 隱私權政策 · 隐私政策</h2>
+    <p class="langs">
+      <a href="#privacy-ko">한국어</a> · <a href="#privacy-en" lang="en">English</a> · <a href="#privacy-ja" lang="ja">日本語</a> · <a href="#privacy-zh-Hant" lang="zh-Hant">繁體中文</a> · <a href="#privacy-zh-Hans" lang="zh-Hans">简体中文</a>
+    </p>
+
+    <div id="privacy-ko">
+      <p class="sub">시행일: 2026년 10월 26일</p>
+      <p><strong>시술노트는 사용자의 기록을 저희에게 보내지 않습니다.</strong>
+      계정도 로그인도 없습니다. 저희 서버가 없고, 앱에는 스스로 인터넷에 접속하는 코드가 없습니다. 플러스를 사거나 복원할 때만 Apple의 App Store 기능이 Apple과 통신합니다. 분석 도구, 광고, 외부 개발 도구(SDK)도 들어 있지 않습니다. 그래서 저희(시술노트 운영자)는 사용자의 시술 기록, 결제 문자, 기기 정보를 받지도 보관하지도 않습니다.</p>
+
+      <h3>1. 처리하는 개인정보와 목적</h3>
+      <ul>
+        <li>앱으로는 저희가 처리하는 개인정보가 없습니다. 아래 2번의 정보는 사용자 기기에만 있고 저희에게 오지 않습니다.</li>
+        <li>메일로 문의하실 때만: 보내신 이메일 주소, 적어 주신 이름, 메일 내용과 첨부 파일을 답장하는 데만 씁니다.</li>
+        <li>가명정보를 만들지 않고, 위 목적 밖으로 쓰거나 남에게 주지 않습니다.</li>
+      </ul>
+
+      <h3>2. 기기 안에만 저장되는 것</h3>
+      <ul>
+        <li>기록: 시술 종류, 받은 날, 병원 이름, 금액, 카드(문자에서 읽는 것은 카드사 이름과 끝 네 자리뿐), 메모, 다시 받는 주기.</li>
+        <li>설정: 가리기·잠금·알림 시각, 쉬는 중인 시술, 앱이 캘린더에 넣은 일정의 식별 번호, 자동 백업 폴더 위치, 마지막 백업 날짜와 시각.</li>
+        <li>이것들은 이 아이폰의 앱 폴더에 파일 하나로 저장됩니다. iOS 데이터 보호가 걸려 있어, 폰을 켠 뒤 처음 잠금을 풀기 전에는 읽을 수 없습니다.</li>
+        <li>시술 기록은 건강과 관련된 민감한 정보일 수 있습니다. 이 정보는 사용자 기기에만 있고 저희는 받지 않습니다.</li>
+      </ul>
+
+      <h3>3. 결제 문자</h3>
+      <ul>
+        <li>시스템의 「붙여넣기」 단추를 누를 때만 복사해 둔 글자를 읽습니다. 앱은 문자 앱이나 받은 문자를 직접 읽을 수 없습니다.</li>
+        <li>문자는 이 폰 안에서 금액·병원·날짜·카드를 찾는 데만 쓰고, 문자 원문은 저장하지 않습니다. 저장되는 것은 확인 화면에서 사용자가 저장한 항목뿐입니다.</li>
+      </ul>
+
+      <h3>4. 앱이 쓰는 권한</h3>
+      <ul>
+        <li>알림: 다음 관리 날이 다가오면 알리는 데만 씁니다. 알림은 기기 안에서 iOS가 예약하며 저희 서버를 거치지 않습니다. 알림에는 시술 이름과 병원 이름이 들어가 잠금 화면에 보일 수 있습니다. 「가리기」를 켜면 「관리 예약」으로만 나오고 병원 이름은 빠집니다.</li>
+        <li>캘린더(플러스, 사용자가 켤 때만): 시술마다 다음 관리 날에 종일 일정 하나를 넣습니다. 제목은 「(시술 이름) 시술 예정」이고, 「캘린더 제목도 가리기」를 켜면 「관리 예약」입니다. 병원 이름·금액·메모는 넣지 않습니다. 앱은 자기가 넣은 일정만 식별 번호로 찾아 고치고 지우며, 다른 일정은 읽지 않습니다. 일정 추가만 허락하는 권한으로는 앱이 넣은 일정도 다시 찾을 수 없어서 ‘전체 접근’을 요청합니다.<br>
+        일정은 기본 캘린더에 들어갑니다. 그 캘린더가 iCloud·Google 등과 동기화되거나 다른 사람과 공유된 캘린더라면 그 서비스의 규칙에 따라 옮겨지고, 공유된 사람도 일정 제목을 볼 수 있습니다. 이럴 때는 「캘린더 제목도 가리기」를 켜 두세요.</li>
+        <li>Face ID·기기 암호(앱 잠금을 켤 때만): 본인 확인은 iOS가 하고, 앱은 확인에 성공했는지만 받습니다. 얼굴 정보는 앱도 저희도 받지 않습니다. 앱 잠금을 켜면 앱 전환 화면에서도 기록을 가립니다.</li>
+        <li>위치, 연락처, 사진, 카메라, 마이크, 건강 데이터 권한은 묻지 않습니다.</li>
+      </ul>
+
+      <h3>5. 기기 밖으로 나가는 경우 (사용자가 고를 때만)</h3>
+      <ul>
+        <li>백업 저장하기: 모든 기록이 담긴 .json 파일을 사용자가 고른 곳에 저장합니다.</li>
+        <li>자동 백업: 사용자가 고른 폴더에만 「시술노트-자동백업.json」 파일 하나를 덮어씁니다. 앱이 그 밖의 곳으로 보내지 않습니다. 그 폴더가 iCloud Drive라면 사용자 본인의 iCloud로 동기화됩니다.</li>
+        <li>백업 파일은 암호화되지 않습니다. 보관할 곳과 보낼 상대를 조심해서 정해 주세요.</li>
+        <li>아이폰의 iCloud 백업이나 컴퓨터 백업을 켜 두었다면 앱 폴더의 기록도 그 백업에 들어갈 수 있습니다.</li>
+        <li>이런 동기화와 백업은 사용자와 Apple 등 그 서비스 사이의 일이고, 저희는 그 내용을 볼 수 없습니다.</li>
+      </ul>
+
+      <h3>6. 플러스 결제</h3>
+      <p>플러스는 한 번 결제이며, 결제는 Apple의 App Store가 처리합니다. 저희는 카드 번호 같은 결제 정보를 받지 않습니다. 앱은 이 폰에서 App Store 기능으로 플러스를 샀는지만 확인하고, 구매 기록을 저희에게 보내지 않습니다.</p>
+
+      <h3>7. 다른 곳에 주거나 맡기는 것, 나라 밖으로 옮기는 것</h3>
+      <ul>
+        <li>앱으로는 저희가 받는 개인정보가 없으므로 다른 사람에게 주거나, 처리를 맡기거나, 나라 밖으로 옮기는 일이 없습니다.</li>
+        <li>메일 문의만 해당합니다. 저희는 Google LLC의 Gmail로 메일을 받기 때문에, 메일 보관을 Google에 맡기고 있습니다.
+          <ul>
+            <li>옮겨지는 항목: 이메일 주소, 적어 주신 이름, 메일 내용과 첨부 파일</li>
+            <li>나라: 미국 등 Google 데이터 센터가 있는 나라</li>
+            <li>때와 방법: 메일을 보내실 때 인터넷으로</li>
+            <li>받는 곳: Google LLC (<a href="https://policies.google.com/privacy">policies.google.com/privacy</a>)</li>
+            <li>목적과 기간: 메일을 받고 보관하기 위해, 아래 8번에 따라 지울 때까지</li>
+            <li>원하지 않으시면: 메일을 보내지 않으시면 옮겨지지 않습니다. 다만 이 경우 문의에 답해 드릴 수 없습니다.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>8. 보유 기간과 파기</h3>
+      <ul>
+        <li>앱 기록은 저희가 갖고 있지 않습니다. 기록 고치기 화면의 「이 기록 지우기」로 사용자가 직접 지웁니다.</li>
+        <li>앱을 지우면 앱 폴더의 기록·설정과 예약된 알림이 함께 지워집니다.</li>
+        <li><strong>앱을 지워도 남는 것:</strong> 캘린더에 넣은 일정(앱을 지우기 전에 메뉴의 「캘린더에서 빼기」를 누르거나 캘린더 앱에서 지워 주세요), 저장해 둔 백업 파일과 자동 백업 파일, 이미 만들어진 iCloud·컴퓨터 백업(사용자의 백업 설정에 따름).</li>
+        <li>문의 메일은 문의가 끝난 날부터 1년 안에 Gmail에서 지우고 휴지통에서도 지웁니다.</li>
+      </ul>
+
+      <h3>9. 사용자의 권리</h3>
+      <ul>
+        <li>사용자는 언제든 앱 안에서 자기 기록을 보고, 고치고, 지울 수 있습니다.</li>
+        <li>저희가 가진 문의 메일에 대해서는 본인이나 법정대리인, 위임받은 사람이 열람·정정·삭제·처리 정지를 아래 메일로 요청할 수 있고, 10일 안에 답합니다.</li>
+        <li>저희는 앱 기록을 갖고 있지 않아서, 메일로 요청하셔도 대신 찾거나 지워 드릴 수 있는 것이 없습니다.</li>
+      </ul>
+
+      <h3>10. 자동으로 모으는 장치</h3>
+      <ul>
+        <li>앱에는 쿠키, 광고 식별자, 분석 도구가 없고, 사용자를 추적하지 않습니다.</li>
+        <li>아이폰의 설정 › 개인정보 보호 및 보안 › 분석 및 향상에서 「앱 개발자와 공유」를 켰다면, Apple이 오류 보고와 사용 통계를 개인을 알아볼 수 없는 형태로 저희에게 줄 수 있습니다. 같은 곳에서 끌 수 있습니다.</li>
+        <li>이 지원 페이지는 GitHub Pages에서 열립니다. 페이지를 열면 GitHub가 보안을 위해 접속 기록(IP 주소 등)을 남길 수 있으며, 저희는 그 기록을 받지 않습니다.</li>
+      </ul>
+
+      <h3>11. 안전하게 지키는 방법</h3>
+      <ul>
+        <li>앱 폴더의 기록 파일에 iOS 데이터 보호를 겁니다.</li>
+        <li>앱 잠금(Face ID·기기 암호), 앱 전환 화면 가리기, 시술 이름 가리기를 제공합니다.</li>
+        <li>문의 메일은 답장하는 운영자만 봅니다.</li>
+      </ul>
+
+      <h3>12. 아동</h3>
+      <p>시술노트는 만 14세 미만 아동을 대상으로 하지 않습니다. 앱으로는 아동을 포함해 누구의 개인정보도 저희가 받지 않습니다. 만 14세 미만이라면 보호자(법정대리인)와 함께 메일로 문의해 주세요.</p>
+
+      <h3>13. 개인정보 보호책임자와 문의</h3>
+      <p>개인정보 보호책임자: 시술노트 운영자(morningverse) · <a href="mailto:morningverse67@gmail.com">morningverse67@gmail.com</a><br>
+      개인정보 문의와 고충도 이 메일로 받습니다.</p>
+
+      <h3>14. 권리 침해를 구제받는 곳</h3>
+      <ul>
+        <li>개인정보분쟁조정위원회: 1833-6972 (<a href="https://www.kopico.go.kr">www.kopico.go.kr</a>)</li>
+        <li>개인정보침해신고센터: 118 (<a href="https://privacy.kisa.or.kr">privacy.kisa.or.kr</a>)</li>
+        <li>대검찰청: 1301 (<a href="https://www.spo.go.kr">www.spo.go.kr</a>)</li>
+        <li>경찰청: 182 (<a href="https://ecrm.police.go.kr">ecrm.police.go.kr</a>)</li>
+      </ul>
+
+      <h3>15. 이 방침이 바뀔 때</h3>
+      <p>바뀌면 이 페이지에 바뀐 내용과 시행일을 적습니다. 저희에게 정보를 보내게 되는 기능이 생기면, 그 기능을 쓰기 전에 앱 안에서 먼저 알립니다. 번역본과 한국어판이 다르면 한국어판을 따릅니다.</p>
+    </div>
+
+    <div id="privacy-en" lang="en">
+      <p class="sub">Effective 26 October 2026</p>
+      <p><strong>Sisul Note does not send your records to us.</strong> There is no account and no login. We run no server, and the app has no code that connects to the internet on its own; only when you buy or restore Plus does Apple's App Store framework talk to Apple. There are no analytics, no advertising and no third-party SDKs. So we, the operator of Sisul Note, never receive or keep your treatment records, payment texts or device details.</p>
+      <ul>
+        <li><strong>What we process.</strong> Through the app, nothing. If you email us, your email address, any name you give, and the content and attachments of your message, used only to reply. We create no pseudonymised data and use nothing for any other purpose.</li>
+        <li><strong>Stored only on your device.</strong> Records: treatment, date, clinic, amount, card (from a text, only the card company and last four digits), memo and repeat interval. Settings: hide, lock and reminder settings, paused treatments, IDs of the calendar events the app added, the auto backup folder, and the date and time of the last backup. They are kept in one file in the app's folder on your iPhone, protected by iOS Data Protection so it can't be read until you first unlock the phone after it starts. Treatment records can be sensitive health-related information; they stay on your device and never reach us.</li>
+        <li><strong>Payment texts.</strong> The app reads copied text only when you tap the system Paste button; it cannot read your Messages. The text is used on the phone only to find the amount, clinic, date and card, and the original text is not saved. Only the fields you save on the confirm screen are stored.</li>
+        <li><strong>Permissions.</strong> Notifications: reminders before your next visit, scheduled by iOS on your device without passing through any server of ours. A reminder shows the treatment and clinic and may appear on the lock screen; with Hide on it shows only “Appointment” and no clinic. Calendar (Plus, only when you turn it on): one all-day event per treatment on the next visit date, titled with the treatment name, or “Appointment” with Hide calendar titles too. Clinic, amount and memo are not added. The app finds, changes and deletes only the events it added, by their IDs, and does not read your other events; it asks for Full Access because with add-only access it cannot find its own events again. Events go to your default calendar, so if that calendar syncs with iCloud, Google or another service, or is shared with other people, that service's rules apply and those people can see the titles; turn on Hide calendar titles too in that case. Face ID or passcode (only with App lock on): iOS checks that it's you and the app only learns whether it succeeded; neither the app nor we receive face data. With App lock on, records are also hidden in the app switcher. The app does not ask for location, contacts, photos, camera, microphone or health data.</li>
+        <li><strong>When data leaves the app (only when you choose).</strong> Save backup writes a .json file with all records to a place you pick. Auto backup overwrites one file, 시술노트-자동백업.json, only in the folder you picked; if that folder is in iCloud Drive, it syncs to your own iCloud. Backup files are not encrypted. If iCloud Backup or computer backup is on for your iPhone, the app's folder may be included. These syncs and backups are between you and Apple or that service; we cannot see them.</li>
+        <li><strong>Plus.</strong> A one-time purchase handled by Apple's App Store. We never receive card or payment details. The app checks on the phone, through the App Store framework, whether Plus was bought, and sends no purchase record to us.</li>
+        <li><strong>Sharing, outsourcing and transfer abroad.</strong> Through the app, none, because we receive nothing. Email only: we receive mail through Gmail by Google LLC, so your message (address, name, content, attachments) is stored by Google in the United States and other countries where it has data centres, from when you send it until we delete it as below. Google LLC: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>. If you don't want this, don't email us; we then cannot answer you.</li>
+        <li><strong>Retention and deletion.</strong> We hold no app data. Delete a record with Delete this record on its edit screen. Deleting the app deletes its folder (records and settings) and its scheduled reminders. <strong>Not deleted with the app:</strong> calendar events it added (tap Remove from calendar first, or delete them in Calendar), backup files you saved, and existing iCloud or computer backups (they follow your backup settings). Emails are deleted from Gmail, including the trash, within one year after the matter is closed.</li>
+        <li><strong>Your rights.</strong> You can view, correct and delete your records in the app at any time. For emails we hold, you, your legal representative or someone you authorise can ask to see, correct, delete or stop processing them; we reply within 10 days. We hold no app records, so there is nothing we can look up or delete for you by email.</li>
+        <li><strong>Automatic collection.</strong> No cookies, advertising identifiers or analytics in the app, and no tracking. If you turned on Share With App Developers in iPhone Settings (Privacy &amp; Security › Analytics &amp; Improvements), Apple may give us crash reports and usage statistics in a form that does not identify you; you can turn it off there. This support page is served by GitHub Pages, and GitHub may log visits (such as IP addresses) for security. We do not receive those logs.</li>
+        <li><strong>Security.</strong> iOS Data Protection on the app's file, App lock with Face ID or passcode, hiding in the app switcher, and hiding treatment names. Only the operator who replies reads support emails.</li>
+        <li><strong>Children.</strong> Sisul Note is not directed at children under 14. Through the app we receive no personal data from anyone, children included. If you are under 14, please email us together with a parent or guardian.</li>
+        <li><strong>Privacy officer and contact.</strong> Operator of Sisul Note (morningverse), <a href="mailto:morningverse67@gmail.com">morningverse67@gmail.com</a>. Privacy questions and complaints are handled here too.</li>
+        <li><strong>Remedies in Korea.</strong> Personal Information Dispute Mediation Committee 1833-6972 (kopico.go.kr), Personal Information Infringement Report Center 118 (privacy.kisa.or.kr), Supreme Prosecutors' Office 1301 (spo.go.kr), Korean National Police Agency 182 (ecrm.police.go.kr).</li>
+        <li><strong>Changes.</strong> Changes are posted here with a new effective date. If a feature would ever send information to us, the app will tell you before you use it. If a translation differs from the Korean version, the Korean version prevails.</li>
+      </ul>
+    </div>
+
+    <div id="privacy-ja" lang="ja">
+      <p class="sub">施行日: 2026年10月26日</p>
+      <p><strong>施術ノートは、記録を当方に送りません。</strong>アカウントもログインもありません。当方のサーバーはなく、アプリには自らインターネットに接続するコードがありません。Plus の購入・復元のときだけ、Apple の App Store の仕組みが Apple と通信します。解析ツール、広告、第三者の開発キット（SDK）も含まれていません。そのため当方（施術ノート運営者）は、施術の記録、決済SMS、端末の情報を受け取らず、保管もしません。</p>
+      <ul>
+        <li><strong>当方が扱う個人情報。</strong>アプリからはありません。メールでお問い合わせいただいた場合のみ、メールアドレス、書かれたお名前、本文と添付を、返信のためだけに使います。仮名加工情報は作らず、ほかの目的には使いません。</li>
+        <li><strong>端末にだけ保存されるもの。</strong>記録（施術、受けた日、クリニック、金額、カード〔SMSから読むのはカード会社名と下4桁だけ〕、メモ、間隔）と設定（隠す・ロック・通知、休止中の施術、アプリが追加したカレンダー予定のID、自動バックアップのフォルダ、最後のバックアップの日時）。iPhone のアプリ内フォルダに1つのファイルとして保存され、iOS のデータ保護により、起動後に初めてロックを解除するまで読み取れません。施術の記録は健康に関わる機微な情報になりえますが、端末の中だけにあり、当方には届きません。</li>
+        <li><strong>決済SMS。</strong>システムの「ペースト」ボタンを押したときだけ、コピーした文字を読み取ります。メッセージアプリを読むことはできません。金額・クリニック・日付・カードを探すためにこのスマホの中だけで使い、原文は保存しません。保存されるのは確認画面で保存した項目だけです。</li>
+        <li><strong>権限。</strong>通知 — 次の来院が近づいたことを知らせるためだけに使い、端末内で iOS が予約し、当方のサーバーを通りません。通知には施術名とクリニック名が入り、ロック画面に表示されることがあります。「隠す」をオンにすると「予約」とだけ表示され、クリニック名は入りません。カレンダー（Plus、オンにしたときだけ）— 施術ごとに次の来院日に終日の予定を1件追加します。タイトルは施術名、「カレンダーのタイトルも隠す」では「予約」です。クリニック名・金額・メモは入れません。アプリは自分が追加した予定だけをIDで探して変更・削除し、ほかの予定は読み取りません。追加だけの権限では自分の予定も探せないため、フルアクセスを求めます。予定はデフォルトのカレンダーに入るため、そのカレンダーが iCloud・Google などと同期している場合や他の人と共有している場合は、そのサービスの規則に従い、共有相手にもタイトルが見えます。その場合は「カレンダーのタイトルも隠す」をオンにしてください。Face ID・パスコード（アプリのロックをオンにしたときだけ）— 本人確認は iOS が行い、アプリは成功したかどうかだけを受け取ります。顔のデータはアプリも当方も受け取りません。ロックがオンなら、アプリ切り替え画面でも記録を隠します。位置情報、連絡先、写真、カメラ、マイク、ヘルスケアの権限は求めません。</li>
+        <li><strong>アプリの外に出るとき（自分で選んだときだけ）。</strong>「バックアップを保存」は全記録の .json ファイルを選んだ場所に保存します。自動バックアップは選んだフォルダにだけ「시술노트-자동백업.json」を1つ上書きし、そのフォルダが iCloud Drive なら自分の iCloud に同期されます。バックアップファイルは暗号化されません。iPhone の iCloud バックアップやコンピュータへのバックアップがオンなら、アプリ内フォルダも含まれることがあります。これらは利用者と Apple などのサービスとの間のことで、当方は中身を見られません。</li>
+        <li><strong>Plus。</strong>一度だけの購入で、Apple の App Store が支払いを処理します。カード番号などの支払い情報は受け取りません。アプリは App Store の仕組みで購入済みかをこのスマホで確かめるだけで、購入記録を当方に送りません。</li>
+        <li><strong>第三者提供・委託・国外移転。</strong>アプリについては、受け取る情報がないためありません。メールだけは Google LLC の Gmail で受け取るため、送信時からメール（アドレス、お名前、本文、添付）が Google（米国など Google のデータセンターがある国）に保管され、下記のとおり当方が削除するまで残ります。Google LLC: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a> 。望まない場合はメールを送らないでください（その場合はお答えできません）。</li>
+        <li><strong>保存期間と削除。</strong>アプリの記録を当方は持っていません。記録は編集画面の「この記録を削除」で消せます。アプリを削除すると、アプリ内フォルダ（記録と設定）と予約済みの通知が消えます。<strong>アプリを削除しても残るもの:</strong> 追加したカレンダーの予定（先にメニューの「カレンダーから外す」を押すか、カレンダーで削除してください）、保存したバックアップファイル、作成済みの iCloud・コンピュータのバックアップ（バックアップの設定に従います）。お問い合わせメールは、問い合わせが終わった日から1年以内に Gmail からごみ箱も含めて削除します。</li>
+        <li><strong>利用者の権利。</strong>記録はアプリでいつでも見て、直して、消せます。当方が持つメールについては、本人、法定代理人または委任を受けた人が閲覧・訂正・削除・処理停止を求めることができ、10日以内に返答します。アプリの記録は持っていないため、メールでご依頼いただいても代わりに探したり消したりできるものはありません。</li>
+        <li><strong>自動で集める仕組み。</strong>アプリにクッキー、広告識別子、解析ツールはなく、追跡もしません。iPhone の設定（プライバシーとセキュリティ › 解析および改善）で「App デベロッパと共有」をオンにしている場合、Apple が個人を特定できない形でクラッシュレポートや利用統計を当方に提供することがあります。同じ場所でオフにできます。このサポートページは GitHub Pages で配信され、GitHub がセキュリティのためにアクセス記録（IPアドレスなど）を残すことがあります。当方はその記録を受け取りません。</li>
+        <li><strong>安全のための措置。</strong>アプリのファイルへの iOS データ保護、Face ID・パスコードによるアプリのロック、アプリ切り替え画面での非表示、施術名を隠す機能。お問い合わせメールは返信する運営者だけが読みます。</li>
+        <li><strong>子ども。</strong>施術ノートは14歳未満の子どもを対象としていません。アプリを通じて、子どもを含め誰の個人情報も受け取りません。14歳未満の方は保護者と一緒にメールしてください。</li>
+        <li><strong>個人情報保護責任者・お問い合わせ。</strong>施術ノート運営者（morningverse）、<a href="mailto:morningverse67@gmail.com">morningverse67@gmail.com</a> 。個人情報に関するご質問・苦情もこちらで受け付けます。</li>
+        <li><strong>韓国での救済窓口。</strong>個人情報紛争調停委員会 1833-6972（kopico.go.kr）、個人情報侵害申告センター 118（privacy.kisa.or.kr）、大検察庁 1301（spo.go.kr）、警察庁 182（ecrm.police.go.kr）。</li>
+        <li><strong>変更。</strong>変更する場合は、このページに内容と施行日を記載します。当方に情報を送る機能ができるときは、使う前にアプリ内でお知らせします。翻訳と韓国語版が異なる場合は韓国語版に従います。</li>
+      </ul>
+    </div>
+
+    <div id="privacy-zh-Hant" lang="zh-Hant">
+      <p class="sub">生效日期：2026年10月26日</p>
+      <p><strong>療程筆記不會把你的紀錄傳給我們。</strong>沒有帳號，也不必登入。我們沒有伺服器，App 也沒有自行連上網路的程式碼；只有在購買或恢復購買 Plus 時，Apple 的 App Store 功能才會與 Apple 通訊。App 內沒有分析工具、廣告或第三方開發套件（SDK）。因此我們（療程筆記營運者）不會收到、也不會保存你的療程紀錄、付款簡訊或裝置資訊。</p>
+      <ul>
+        <li><strong>我們處理的個人資料。</strong>透過 App：沒有。只有在你寄信詢問時，會把你的電子郵件地址、你留下的姓名、信件內容與附件用於回覆，不作其他用途，也不製作假名化資料。</li>
+        <li><strong>只存在你裝置上的資料。</strong>紀錄（療程、日期、診所、金額、卡片〔從簡訊只讀發卡機構名稱和末四碼〕、備註、重複週期）與設定（隱藏、鎖定、通知、暫停中的療程、App 加入的行事曆行程識別碼、自動備份資料夾、上次備份的日期與時間）。這些資料以一個檔案存在 iPhone 的 App 資料夾中，受 iOS 資料保護，手機開機後第一次解鎖前無法讀取。療程紀錄可能屬於與健康相關的敏感資訊，但只存在你的裝置上，不會傳給我們。</li>
+        <li><strong>付款簡訊。</strong>只有在你點系統的「貼上」按鈕時，才會讀取複製的文字；App 無法讀取「訊息」App。文字只在這支手機上用來找出金額、診所、日期和卡片，原文不會儲存。只會儲存你在確認畫面上存下的欄位。</li>
+        <li><strong>權限。</strong>通知 — 只用於在下次回診前提醒你，由 iOS 在裝置上排程，不經過我們的伺服器。通知會顯示療程與診所名稱，可能出現在鎖定畫面；開啟「隱藏」後只顯示「預約」，且不含診所名稱。行事曆（Plus，僅在你開啟時）— 每個療程在下次回診日加入一個全天行程，標題為療程名稱；開啟「行事曆標題也隱藏」時為「預約」。不會加入診所名稱、金額或備註。App 只會依識別碼找出、修改和刪除它自己加入的行程，不會讀取你的其他行程；因為只允許加入行程的權限下 App 也找不回自己的行程，所以需要「完整取用權」。行程會加入預設行事曆，若該行事曆與 iCloud、Google 等服務同步，或與他人共享，會依該服務的規則處理，共享對象也看得到標題；此時請開啟「行事曆標題也隱藏」。Face ID 或密碼（僅在開啟 App 鎖定時）— 由 iOS 確認身分，App 只會得知是否成功；App 和我們都不會收到臉部資料。開啟 App 鎖定時，App 切換畫面中也會遮住紀錄。App 不會要求位置、聯絡人、照片、相機、麥克風或健康資料權限。</li>
+        <li><strong>資料離開 App 的情況（僅在你選擇時）。</strong>「儲存備份」會把含有全部紀錄的 .json 檔存到你選的位置。自動備份只會在你選的資料夾中覆寫一個檔案「시술노트-자동백업.json」；若該資料夾在 iCloud 雲碟，會同步到你自己的 iCloud。備份檔沒有加密。若 iPhone 開啟了 iCloud 備份或電腦備份，App 資料夾也可能包含在內。這些同步與備份是你與 Apple 或該服務之間的事，我們看不到內容。</li>
+        <li><strong>Plus。</strong>一次性購買，由 Apple 的 App Store 處理付款。我們不會收到卡號等付款資訊。App 只會在這支手機上透過 App Store 功能確認是否已購買 Plus，不會把購買紀錄傳給我們。</li>
+        <li><strong>提供給第三方、委託處理與跨境傳輸。</strong>透過 App：沒有，因為我們不會收到任何資料。僅限電子郵件：我們以 Google LLC 的 Gmail 收信，因此你的信件（地址、姓名、內容、附件）自寄出起會保存在 Google（美國等設有 Google 資料中心的國家），直到我們依下述方式刪除。Google LLC：<a href="https://policies.google.com/privacy">policies.google.com/privacy</a>。若你不希望如此，請不要寄信給我們；但這樣我們就無法回覆你。</li>
+        <li><strong>保存期間與刪除。</strong>我們沒有 App 的紀錄。你可以在紀錄編輯畫面點「刪除這筆紀錄」。刪除 App 時，App 資料夾（紀錄與設定）和已排程的通知會一起刪除。<strong>刪除 App 後仍會留下：</strong>加入行事曆的行程（請先點選單中的「從行事曆移除」，或在行事曆中刪除）、你儲存的備份檔，以及已建立的 iCloud 或電腦備份（依你的備份設定）。詢問信件會在詢問結束後一年內從 Gmail 刪除，並清空垃圾桶。</li>
+        <li><strong>你的權利。</strong>你隨時可以在 App 中查看、修改和刪除自己的紀錄。對於我們持有的信件，你本人、法定代理人或受你委託的人可以要求查閱、更正、刪除或停止處理，我們會在10天內回覆。我們沒有 App 的紀錄，所以即使來信要求，也沒有可以代為查找或刪除的資料。</li>
+        <li><strong>自動收集機制。</strong>App 內沒有 Cookie、廣告識別碼或分析工具，也不會追蹤你。若你在 iPhone 設定（隱私權與安全性 › 分析與改進項目）中開啟「與 App 開發者分享」，Apple 可能會以無法識別個人的形式，將當機報告與使用統計提供給我們；你可以在同一處關閉。本支援頁面由 GitHub Pages 提供，GitHub 可能為了安全記錄造訪紀錄（如 IP 位址），我們不會收到這些紀錄。</li>
+        <li><strong>安全措施。</strong>App 檔案的 iOS 資料保護、以 Face ID 或密碼進行的 App 鎖定、App 切換畫面的遮蔽，以及隱藏療程名稱功能。詢問信件只有負責回覆的營運者會閱讀。</li>
+        <li><strong>兒童。</strong>療程筆記並非以未滿14歲的兒童為對象。透過 App，我們不會收到任何人（包括兒童）的個人資料。未滿14歲者請與家長或監護人一起來信。</li>
+        <li><strong>個人資料保護負責人與聯絡方式。</strong>療程筆記營運者（morningverse），<a href="mailto:morningverse67@gmail.com">morningverse67@gmail.com</a>。個人資料相關問題與申訴也由此受理。</li>
+        <li><strong>韓國的救濟管道。</strong>個人資訊糾紛調解委員會 1833-6972（kopico.go.kr）、個人資訊侵害申報中心 118（privacy.kisa.or.kr）、大檢察廳 1301（spo.go.kr）、警察廳 182（ecrm.police.go.kr）。</li>
+        <li><strong>變更。</strong>若有變更，會在本頁註明變更內容與新的生效日期。若日後有會把資訊傳給我們的功能，會在使用前先於 App 內告知。譯文與韓文版不同時，以韓文版為準。</li>
+      </ul>
+    </div>
+
+    <div id="privacy-zh-Hans" lang="zh-Hans">
+      <p class="sub">生效日期：2026年10月26日</p>
+      <p><strong>疗程笔记不会把你的记录传给我们。</strong>没有账号，也不用登录。我们没有服务器，App 也没有自行联网的代码；只有在购买或恢复购买 Plus 时，Apple 的 App Store 功能才会与 Apple 通信。App 内没有分析工具、广告或第三方开发套件（SDK）。因此我们（疗程笔记运营者）不会收到、也不会保存你的疗程记录、付款短信或设备信息。</p>
+      <ul>
+        <li><strong>我们处理的个人信息。</strong>通过 App：没有。只有在你发邮件咨询时，会把你的邮箱地址、你留下的姓名、邮件内容和附件用于回复，不作其他用途，也不制作假名化信息。</li>
+        <li><strong>只保存在你设备上的信息。</strong>记录（项目、日期、诊所、金额、卡片〔从短信只读发卡机构名称和后四位〕、备注、重复周期）和设置（隐藏、锁定、通知、暂停中的项目、App 添加的日历日程标识、自动备份文件夹、上次备份的日期和时间）。这些信息以一个文件保存在 iPhone 的 App 文件夹中，受 iOS 数据保护，手机开机后第一次解锁前无法读取。疗程记录可能属于与健康相关的敏感信息，但只保存在你的设备上，不会传给我们。</li>
+        <li><strong>付款短信。</strong>只有在你点系统的“粘贴”按钮时，才会读取复制的文字；App 无法读取“信息”App。文字只在这台手机上用来找出金额、诊所、日期和卡片，原文不会保存。只会保存你在确认画面上存下的字段。</li>
+        <li><strong>权限。</strong>通知 — 只用于在下次就诊前提醒你，由 iOS 在设备上安排，不经过我们的服务器。通知会显示项目和诊所名称，可能出现在锁定屏幕上；打开“隐藏”后只显示“预约”，且不含诊所名称。日历（Plus，仅在你打开时）— 每个项目在下次就诊日添加一个全天日程，标题为项目名称；打开“日历标题也隐藏”时为“预约”。不会添加诊所名称、金额或备注。App 只会按标识找出、修改和删除它自己添加的日程，不会读取你的其他日程；因为在只允许添加日程的权限下 App 也找不回自己的日程，所以需要“完全访问”。日程会添加到默认日历，如果该日历与 iCloud、Google 等服务同步，或与他人共享，会按该服务的规则处理，共享对象也能看到标题；这时请打开“日历标题也隐藏”。面容 ID 或密码（仅在打开应用锁时）— 由 iOS 确认身份，App 只会得知是否成功；App 和我们都不会收到面部数据。打开应用锁时，App 切换画面中也会遮住记录。App 不会请求位置、通讯录、照片、相机、麦克风或健康数据权限。</li>
+        <li><strong>信息离开 App 的情况（仅在你选择时）。</strong>“保存备份”会把含有全部记录的 .json 文件存到你选的位置。自动备份只会在你选的文件夹中覆盖一个文件“시술노트-자동백업.json”；如果该文件夹在 iCloud 云盘，会同步到你自己的 iCloud。备份文件没有加密。如果 iPhone 打开了 iCloud 备份或电脑备份，App 文件夹也可能包含在内。这些同步和备份是你与 Apple 或该服务之间的事，我们看不到内容。</li>
+        <li><strong>Plus。</strong>一次性购买，由 Apple 的 App Store 处理付款。我们不会收到卡号等付款信息。App 只会在这台手机上通过 App Store 功能确认是否已购买 Plus，不会把购买记录传给我们。</li>
+        <li><strong>向第三方提供、委托处理与跨境传输。</strong>通过 App：没有，因为我们不会收到任何信息。仅限邮件：我们用 Google LLC 的 Gmail 收信，因此你的邮件（地址、姓名、内容、附件）自发出起会保存在 Google（美国等设有 Google 数据中心的国家），直到我们按下述方式删除。Google LLC：<a href="https://policies.google.com/privacy">policies.google.com/privacy</a>。如果你不希望这样，请不要给我们发邮件；但这样我们就无法回复你。</li>
+        <li><strong>保存期限与删除。</strong>我们没有 App 的记录。你可以在记录编辑画面点“删除这条记录”。删除 App 时，App 文件夹（记录和设置）和已安排的通知会一起删除。<strong>删除 App 后仍会留下：</strong>添加到日历的日程（请先点菜单中的“从日历移除”，或在日历中删除）、你保存的备份文件，以及已生成的 iCloud 或电脑备份（按你的备份设置）。咨询邮件会在咨询结束后一年内从 Gmail 删除，并清空废纸篓。</li>
+        <li><strong>你的权利。</strong>你随时可以在 App 中查看、修改和删除自己的记录。对于我们持有的邮件，你本人、法定代理人或受你委托的人可以要求查阅、更正、删除或停止处理，我们会在10天内回复。我们没有 App 的记录，所以即使来信要求，也没有可以代为查找或删除的信息。</li>
+        <li><strong>自动收集机制。</strong>App 内没有 Cookie、广告标识符或分析工具，也不会追踪你。如果你在 iPhone 设置（隐私与安全性 › 分析与改进）中打开了“与 App 开发者共享”，Apple 可能会以无法识别个人的形式，把崩溃报告和使用统计提供给我们；你可以在同一处关闭。本支持页面由 GitHub Pages 提供，GitHub 可能出于安全记录访问记录（如 IP 地址），我们不会收到这些记录。</li>
+        <li><strong>安全措施。</strong>App 文件的 iOS 数据保护、用面容 ID 或密码进行的应用锁、App 切换画面的遮挡，以及隐藏项目名称功能。咨询邮件只有负责回复的运营者会阅读。</li>
+        <li><strong>儿童。</strong>疗程笔记并非以未满14岁的儿童为对象。通过 App，我们不会收到任何人（包括儿童）的个人信息。未满14岁者请与父母或监护人一起来信。</li>
+        <li><strong>个人信息保护负责人与联系方式。</strong>疗程笔记运营者（morningverse），<a href="mailto:morningverse67@gmail.com">morningverse67@gmail.com</a>。个人信息相关问题与投诉也在此受理。</li>
+        <li><strong>韩国的救济渠道。</strong>个人信息纠纷调解委员会 1833-6972（kopico.go.kr）、个人信息侵害举报中心 118（privacy.kisa.or.kr）、大检察厅 1301（spo.go.kr）、警察厅 182（ecrm.police.go.kr）。</li>
+        <li><strong>变更。</strong>如有变更，会在本页注明变更内容和新的生效日期。如果今后有会把信息传给我们的功能，会在使用前先在 App 内告知。译文与韩文版不一致时，以韩文版为准。</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>계정도 서버도 없고, 기록은 저희에게 오지 않습니다. <span lang="en">No account, no server; your records never come to us.</span> <span lang="ja">アカウントもサーバーもなく、記録が当方に届くことはありません。</span> <span lang="zh-Hant">沒有帳號也沒有伺服器，紀錄不會傳給我們。</span> <span lang="zh-Hans">没有账号也没有服务器，记录不会传给我们。</span></p>
+  </footer>
+</main>
+</body>
+</html>
